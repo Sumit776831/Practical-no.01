@@ -1,0 +1,60 @@
+Aim:
+To design test suites for software applications, understanding different types of testing and frameworks, and writing test cases as per V-Lab format.
+
+🧪 Objective:
+Understand the importance of software testing.
+Explore various software testing frameworks.
+Learn about test cases and types of testing.
+Write unit testing and integration testing cases.
+📚 Theory Overview:
+
+
+Topic	Description
+Software Testing	Process of verifying and validating that a software application works as intended.
+Need for Testing	Ensures software quality, security, usability, and reliability.
+Testing Frameworks	Structured guidelines like JUnit, Selenium, PyTest, etc., to organize testing activities.
+Test Cases	Specific conditions under which a tester assesses a software application.
+Types of Software Testing	Unit Testing, Integration Testing, System Testing, Acceptance Testing, etc.
+Unit Testing	Testing of individual components/modules.
+Integration Testing	Testing interactions between integrated modules.
+📝 Task: Write Test Cases
+
+You need to write test cases in the format given under the CASE study tab on V-Lab portal.
+
+Format for writing a Test Case:
+
+Test Case ID
+Objective
+Inputs
+Expected Output
+Actual Output
+Result (Pass/Fail)
+🧭 Example Based on Campus Map with Interactive Navigation
+
+Sample Unit Test Case:
+
+
+Field	Content
+Test Case ID	TC_01
+Objective	Verify if the login functionality works correctly
+Inputs	Username: student01, Password: correctpass
+Expected Output	Redirects to Home page with user logged in.
+Actual Output	As expected (assuming pass).
+Result	Pass
+Sample Integration Test Case:
+
+
+Field	Content
+Test Case ID	TC_05
+Objective	Verify if after login, the user can access the navigation module
+Inputs	Logged-in student clicks “Get Directions”
+Expected Output	Navigation screen is displayed.
+Actual Output	As expected.
+Result	Pass
+✅ Result:
+
+Designed proper Test Suites for Unit Testing and Integration Testing based on the project Campus Map with Interactive Navigation.
+
+📌 Conclusion:
+
+Testing is crucial to deliver error-free and efficient software. Writing structured test cases ensures traceability, clarity, and improves software robustness.
