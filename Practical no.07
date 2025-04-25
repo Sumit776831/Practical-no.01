@@ -1,0 +1,57 @@
+Aim:
+To model a Sequence Diagram for the project Campus Map with Interactive Navigation, showing how objects interact through time to complete a specific task.
+
+🧪 Objective:
+Understand the elements of a sequence diagram.
+Identify system objects and their roles.
+Model the order of operations and message flow.
+Represent the timing and interaction of system components.
+🧭 Project Title:
+Campus Map with Interactive Navigation
+
+📄 1. Elements in Sequence Diagram
+
+
+Element	Description
+Object	Represents an entity involved in the interaction.
+Life-line bar	A vertical line under each object showing the object's life during the interaction.
+Message	Communication between objects (can be synchronous or asynchronous).
+Activation box	A rectangle on the life-line showing when an object is active (processing a message).
+🧱 2. Scenario Chosen for Sequence Diagram
+
+Use Case: "Get Navigation Route from Current Location to a Destination"
+
+👥 3. Objects Involved
+
+
+Object	Description
+User	Initiates the navigation request.
+MapInterface	UI component that displays the map and collects input.
+GPSModule	Retrieves the user’s current coordinates.
+RouteEngine	Calculates the shortest route.
+MapDisplay	Displays the navigation path on the map.
+🔁 4. Message Flow (Textual Representation of Sequence Diagram)
+
+User        → MapInterface       : requestNavigation(destination)
+MapInterface → GPSModule         : getCurrentLocation()
+GPSModule    → MapInterface      : return currentCoordinates
+MapInterface → RouteEngine       : calculateRoute(currentCoordinates, destination)
+RouteEngine  → MapInterface      : return routePath
+MapInterface → MapDisplay        : displayRoute(routePath)
+MapDisplay   → User              : show route visually
+🕓 5. Sequence Steps Explained:
+User selects a destination and requests navigation.
+MapInterface sends a message to GPSModule to get the current location.
+GPSModule returns the coordinates.
+MapInterface passes coordinates and destination to RouteEngine.
+RouteEngine computes the path and returns the route.
+MapInterface forwards this path to MapDisplay.
+MapDisplay shows the navigation visually to the user.
+✅ Result:
+
+Successfully created a textual UML Sequence Diagram showing how the Campus Map with Interactive Navigation system processes a navigation request and interacts between multiple system components.
+
+📌 Conclusion:
+
+A Sequence Diagram provides a clear view of temporal interaction between objects. It is essential for visualizing real-time system behavior and supports implementation of well-structured logic flows.
+
