@@ -1,0 +1,57 @@
+Aim:To create a project schedule by identifying tasks and resources, and represent it using a Gantt chart for the project titled "Campus Map with Interactive Navigation".
+
+Objective:
+Break down the project into manageable tasks.
+Assign appropriate resources to each task.
+Prepare a time-based schedule using a Gantt chart.
+Visualize the workflow and monitor project progress.
+Project Overview: Campus Map with Interactive Navigation
+A software application that allows students, staff, and visitors to explore a campus map, find buildings/rooms, and receive real-time navigation instructions using GPS or Wi-Fi-based positioning.
+
+1. Identifying Tasks:
+
+Task ID	Task Name	Duration	Dependency
+T1	Requirements Gathering	1 week	-
+T2	Feasibility Study & Project Planning	1 week	T1
+T3	UI/UX Design (Wireframes & Prototypes)	2 weeks	T2
+T4	Backend Design (Database + API)	2 weeks	T2
+T5	Frontend Development	3 weeks	T3
+T6	Backend Development	3 weeks	T4
+T7	GPS/Wi-Fi Navigation Integration	2 weeks	T6
+T8	System Integration & Testing	2 weeks	T5, T7
+T9	Deployment	1 week	T8
+T10	User Training & Documentation	1 week	T9
+
+2. Identifying Resources:
+
+Resource	Assigned To Tasks
+Project Manager	T1 – T10
+Analyst	T1, T2
+UI/UX Designer	T3
+Frontend Developer	T3, T5
+Backend Developer	T4, T6
+Tester	T8
+Deployment Engineer	T9
+Technical Writer	T10
+
+3. Gantt Chart (Simplified Text View)
+Week:        1  2  3  4  5  6  7  8  9 10
+------------------------------------------------
+T1:          █
+T2:             █
+T3:                █ █
+T4:                █ █
+T5:                      █ █ █
+T6:                      █ █ █
+T7:                            █ █
+T8:                               █ █
+T9:                                     █
+T10:                                       █
+Legend: █ = Task Duration (1 week)
+You can create a graphical Gantt chart using tools like GanttProject, Microsoft Project, Excel, or online tools like Lucidchart / TeamGantt.
+
+Result:
+Successfully identified the tasks and resources for the Campus Map with Interactive Navigation project and created a Gantt chart to visualize the project schedule.
+
+Conclusion:
+Project scheduling using Gantt charts helps in visualizing timelines, managing task dependencies, and ensuring efficient resource allocation. It provides clarity for project tracking and timely delivery.
