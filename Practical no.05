@@ -1,0 +1,71 @@
+Aim:
+To create a Data Flow Diagram (DFD) and Control Flow Diagram (CFD) for the project Campus Map with Interactive Navigation to visualize system processes and control logic.
+
+🧪 Objective:
+To model the flow of data between system processes and external entities using DFD.
+To represent the logical flow of control among different operations using CFD.
+🧭 Project Title:
+
+Campus Map with Interactive Navigation
+
+📄 1. Data Flow Diagram (DFD)
+
+➤ Level 0 (Context Level DFD):
+External Entities:
+
+User (Visitor or Student)
+Admin
+GPS/Wi-Fi System
+Process:
+
+Campus Navigation System
+Data Stores:
+
+Map Database
+User Credentials
+Location Logs
+Data Flow:
+
+User → Request Map → Campus Navigation System
+Admin → Update Map Data → Campus Navigation System
+GPS → Provide Current Location → Campus Navigation System
+Campus Navigation System ↔ Map Database (retrieve/store data)
+Campus Navigation System ↔ User Credentials (for login/registration)
+Campus Navigation System → Route Instructions → User
+➤ Level 1 DFD (Breakdown of Campus Navigation System):
+
+Process ID	Process Name	Input	Output
+1.0	User Login & Registration	Login/Register Request	Success/Error Message
+2.0	Search Location	Location Name	Location Info
+3.0	Route Calculation	Current Location, Destination	Navigation Path
+4.0	Admin Map Management	Updated Map Info	Updated Map Data
+5.0	Sync with GPS/Wi-Fi	Trigger Signal	Current Location Data
+🧠 2. Control Flow Diagram (CFD)
+
+➤ Control Flow Description (Textual Format)
+🧩 Main Control Logic:
+
+START
+User launches application.
+If (user = student) → login/register → validate via credentials DB.
+Show interactive map.
+User selects feature:
+If (Search location) → capture input → highlight result.
+If (Get directions) → retrieve current location → calculate path → display route.
+If (Filter facilities) → apply category filter → update map view.
+If (Admin access) → verify admin → access update panel → save new map data.
+END
+➤ Control Decisions (Key Points):
+Login success/failure → determines access to features.
+Location found/not found → alternative suggestions.
+GPS available/unavailable → fall back to manual input.
+Admin validated/not validated → allow or restrict admin features.
+✅ Result:
+
+The Data Flow Diagram and Control Flow Diagram were successfully modeled for the Campus Map with Interactive Navigation system, showing a clear structure of data movement and control flow decisions.
+
+📌 Conclusion:
+
+DFDs help in analyzing system processes and how data moves between them.
+CFDs are crucial in understanding logic and control transitions within the application.
+Both diagrams provide a solid foundation for software design and testing.
