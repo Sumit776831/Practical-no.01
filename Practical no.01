@@ -1,0 +1,55 @@
+Aim:To study and understand the different phases of the Software Development Life Cycle (SDLC).
+
+Objective:
+To identify the purpose of each phase in SDLC.
+To understand the flow and logic of software project execution.
+To relate theoretical knowledge with real-world software development processes.
+🛠️ Apparatus/Tools Required:
+Pen and Paper / Word Processor
+Diagram drawing software (draw.io, Lucidchart, MS Visio) – optional
+Project examples (optional)
+
+
+Theory:
+The Software Development Life Cycle (SDLC) is a structured process followed by software engineers and developers to ensure the successful development and maintenance of software systems. It consists of several distinct phases, each having specific deliverables and review processes.
+
+Phases of SDLC:
+1. Requirement Gathering:
+Purpose: To understand the business need.
+Activities: Client meetings, documentation, feasibility study.
+
+2. Design:
+Purpose: To transform requirements into architecture.
+Activities: High-level design (HLD), low-level design (LLD), database design, interface design.
+
+3. Implementation (Coding):
+Purpose: Actual development of the software.
+Activities: Writing code, following design, version control.
+
+4. Testing:
+Purpose: To verify and validate the code.
+Activities: Unit testing, integration testing, system testing, bug fixing.
+
+5. Deployment:
+Purpose: Making the software available to the users.
+Activities: Installing software in user environment, configuration, user training.
+
+6. Maintenance:
+Purpose: Fixing issues after deployment.
+Activities: Updates, enhancements, support.
+
+Diagram:
+Refer to the attached flowchart below 👇
+
+Procedure:
+Study each phase of SDLC in sequence.
+Draw the flowchart depicting all six phases in a vertical linear order.
+Write a brief explanation of each phase.
+Compare with any real-time software project (optional).
+
+Result:
+Successfully studied all phases of the Software Development Life Cycle and created a flowchart to represent the same.
+
+📌 Conclusion:
+The SDLC provides a disciplined and systematic approach to software development. Understanding each phase helps in producing quality software that meets user expectations and business requirements.
+
