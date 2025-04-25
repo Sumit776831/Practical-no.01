@@ -1,0 +1,61 @@
+ Aim:
+To model the UML Class Diagram of the Campus Map with Interactive Navigation project by identifying key classes, their attributes and methods, and the relationships among them.
+
+🧪 Objective:
+Understand the structure and behavior of the system using UML class diagrams.
+Identify classes, attributes, operations (methods), and relationships.
+Model associations, generalizations, and dependencies between classes.
+🧭 Project Title:
+Campus Map with Interactive Navigation
+
+📄 1. Elements in UML Class Diagram
+
+
+Element	Description
+Class	Represents an entity or object in the system.
+Attribute	Describes properties of a class.
+Operation	Functions or methods the class can perform.
+Relationship	Shows how classes interact (association, generalization, dependency).
+🧱 2. Structural Aspects (Key Classes & Attributes)
+
+
+Class Name	Attributes	Operations (Methods)
+User	userId, name, email, userType	login(), logout(), viewMap()
+Student (inherits User)	studentId, department	register(), viewNavigation()
+Visitor (inherits User)	-	searchLocation(), getRoute()
+Admin (inherits User)	adminId	updateMapData(), manageBuildings()
+Map	mapId, mapVersion, lastUpdated	loadMap(), display(), filterCategory()
+Location	locationId, name, type, coordinates	showOnMap(), getAccessibilityInfo()
+Route	routeId, startPoint, endPoint, path	calculateRoute(), displayRoute()
+GPSModule	gpsId, currentCoordinates	getCurrentLocation(), syncWithMap()
+🔁 3. Behavioral Aspects (Sample Interactions)
+
+User → login(): Authenticates credentials and grants access.
+Student → viewNavigation(): Requests route to destination.
+Map → display(): Shows current version of the map.
+Admin → updateMapData(): Adds or edits map information.
+GPSModule → getCurrentLocation(): Provides real-time coordinates.
+🔗 4. Relationships
+
+
+Relationship Type	Description
+Generalization	Student, Visitor, and Admin inherit from User.
+Association	User interacts with Map and Route.
+Aggregation	Map contains multiple Location instances.
+Dependency	Map depends on GPSModule for location updates.
+🧾 5. Textual Description of UML Class Diagram
+
+User (abstract class)
+↳ Student, Visitor, Admin (inherits User)
+User uses Map, requests Route, and views Location
+Admin manages Map and Location
+Map aggregates multiple Location objects
+Route is calculated based on Location and GPSModule
+GPSModule provides current location to Route and Map
+✅ Result:
+
+Successfully modeled the UML Class Diagram for the Campus Map with Interactive Navigation system, representing both structural and behavioral system elements.
+
+📌 Conclusion:
+
+Class diagrams offer a clear and organized view of a system's architecture, showing what the system is made of and how parts are connected. They are essential in object-oriented software design and serve as a blueprint for development and maintenance.
