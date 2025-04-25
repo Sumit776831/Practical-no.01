@@ -1,0 +1,93 @@
+Aim:To identify the actors, list the use cases, and create a structured use case model for the project Campus Map with Interactive Navigation.
+
+Objective:
+Identify all the external and internal actors.
+Define the system's functionalities (use cases).
+Present a text-based representation of a UML Use Case Diagram.
+Describe key use case scenarios.
+
+
+Project Title:
+Campus Map with Interactive Navigation
+
+1. Identifying Actors
+
+
+Actor	Description
+Visitor	A user who can search for locations and navigate without logging in.
+Student	A registered user who can log in and access personalized features.
+Admin	Responsible for managing campus data and map updates.
+GPS/Wi-Fi System	External service that provides real-time location data.
+
+2. Identifying Use Cases
+
+
+Use Case ID	Use Case Name	Description
+UC1	View Campus Map	Allows the user to access the campus map interface.
+UC2	Search Building/Location	User can search for any building or area on campus.
+UC3	Get Navigation Route	System provides route from user location to selected destination.
+UC4	Filter by Facility Type	Filter map items (labs, hostels, cafeterias, etc.)
+UC5	View Accessibility Options	View info on wheelchair access, ramps, elevators, etc.
+UC6	Admin Login	Allows admin to securely log in.
+UC7	Update Map Data	Admin can add/edit buildings or map routes.
+UC8	Sync with GPS/Wi-Fi	System syncs with GPS/Wi-Fi to track current position.
+UC9	User Login/Register	Login or register for enhanced features (students only).
+
+
+3. Textual Use Case Diagram (Description)
+
+Here’s how the actors interact with the use cases:
+
+Visitor:
+→ View Campus Map
+→ Search Building/Location
+→ Get Navigation Route
+→ Filter by Facility Type
+→ View Accessibility Options
+Student (inherits from Visitor):
+→ User Login/Register
+→ Same features as Visitor
+Admin:
+→ Admin Login
+→ Update Map Data
+GPS/Wi-Fi System:
+→ Sync with GPS/Wi-Fi
+
+
+4. Use Case Scenarios
+
+UC2 – Search Building/Location
+Primary Actor: Visitor / Student
+Precondition: Map is loaded.
+Main Flow:
+
+User clicks on search bar.
+Types the name of the location (e.g., “Library”).
+System shows suggestions and highlights the building on the map.
+User selects a result.
+UC3 – Get Navigation Route
+Primary Actor: Visitor / Student
+Precondition: User has selected a destination.
+Main Flow:
+
+System gets current location via GPS/Wi-Fi.
+Calculates shortest route to selected location.
+Draws the path on the map.
+Optionally provides voice or step-by-step guidance.
+UC7 – Update Map Data
+Primary Actor: Admin
+Precondition: Admin is logged in.
+Main Flow:
+
+Admin selects “Update Map” option.
+Enters/edit new building info or path.
+System validates input.
+Map is updated after confirmation.
+
+Result:
+
+Successfully identified actors, use cases, and written detailed scenarios for the Campus Map with Interactive Navigation project.
+
+Conclusion:
+
+Modeling use case diagrams helps in understanding user-system interaction and defining functional boundaries. It also serves as a foundation for further design activities like sequence diagrams and class diagrams.
